@@ -1,0 +1,48 @@
+// Змінні для світлої теми
+:root {
+    --bg-color: #ffffff;
+    --text-color: #1a1e26;
+    --card-bg: #f9fafb;
+    --accent-blue: #3b82f6;
+    --border-color: #e5e7eb;
+}
+
+// Змінні для темної теми (data-theme)
+[data-theme='dark'] {
+    --bg-color: #0b0e14; // глибокий темний
+    --text-color: #ffffff;
+    --card-bg: #161b22; // трохи світліший для карток
+    --border-color: #262c3a;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 24px;
+    border-radius: 16px;
+    margin-top: 20px;
+}
+
+.btn-theme {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: var(--accent-blue);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+}
